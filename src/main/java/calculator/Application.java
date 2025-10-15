@@ -11,7 +11,6 @@ public class Application {
     private static final Set<String> seperator = new HashSet<>(Arrays.asList(",", ":"));
     private static int sum = 0;
     private static final String regex = "//[a-zA-Z\\W_]\\\\n";
-    private static final Scanner sc = new Scanner(System.in);
 
     /**
      * 커스텀 구분자가 있는지 검사하는 메소드 입니다.
