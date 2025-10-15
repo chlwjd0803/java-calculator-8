@@ -32,7 +32,7 @@ public class Application {
                 }
                 // 1-2. StringBuilder에 값이 없으면 -> 처음부터 구분자를 넣었거나 연속 2번 넣었을때 오류 발생
                 else {
-                    System.out.println("구분자 위치가 유효하지 않습니다.")..;
+                    throw new IllegalArgumentException("구분자 위치가 유효하지 않습니다.");
                 }
             }
             // 2. 숫자가 왔을때 StringBuilder에 올리기
@@ -41,7 +41,7 @@ public class Application {
             }
             // 3. (정의된)구분자도, 숫자도 아닐 경우 -> 잘못된 문자를 입력
             else{
-                System.out.println("잘못된 문자가 입력되었습니다.");
+                throw new IllegalArgumentException("잘못된 문자가 입력되었습니다.");
             }
         }
 
